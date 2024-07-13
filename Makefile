@@ -11,4 +11,4 @@ test:
 	pytest tests
 
 run:
-	python3 package_name  # Run script located at src/package_name/__main__.py
+	python3 src/package_name
