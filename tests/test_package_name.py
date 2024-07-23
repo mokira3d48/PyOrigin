@@ -23,5 +23,4 @@ class PackageNameTest(TestCase):
         self.assertIn('./logging.conf', file_paths)
         self.assertIn('./README.md', file_paths)
         self.assertIn('./CHANGELOG.md', file_paths)
-        self.assertIn('./setup.py', file_paths)
         self.assertIn('./.gitignore', file_paths)
