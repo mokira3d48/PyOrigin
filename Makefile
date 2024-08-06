@@ -11,4 +11,4 @@ test:
 	pytest tests
 
 run:
-	python3 src/package_name
+	python3 -m package_name
