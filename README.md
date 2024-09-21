@@ -8,7 +8,8 @@
 <!-- ![](https://img.shields.io/badge/REST%20Framework-3.14.0-%23A30000) -->
 <!-- ![](https://img.shields.io/badge/Swagger-OpenAPI%202.0-%23aaaa00) -->
 
-Une application Python qui permet de gérer des tâches de manière efficace.
+Referencielle clonnable pour initialiser un projet Python dans les bonnes
+pratiques.
 
 ## Table des matières
 - [Description](#description)
@@ -30,29 +31,40 @@ Mon Projet Python est une application simple qui permet aux utilisateurs de cré
 Pour installer le projet, assurez-vous d'avoir Python 3.7 ou une version ultérieure et `pip` installés sur votre machine. Ensuite, exécutez les commandes suivantes :
 
 ```bash
-git clone https://github.com/username/mon-projet-python.git
-cd mon-projet-python
+git clone git@github.com:mokira3d48/PyOrigin.git my_project
+cd my_project
+sudo rm -r .git
+git init
 pip install -r requirements.txt
 ```
 
-## Utilisation
 1. `sudo apt install cmake python3-venv` Install *Cmake* and *Virtual env*;
 2. `make venv` create a virtual env into directory named `env`;
 3. `ssource env/bin/activate` activate the virtual environment named `env`;
 4. `make install` install the requirements of this package;
 5. `make dev` install the package in dev mode in virtual environment;
 6. `make test` run the unit test scripts located at `tests` directory;
-7. `mkae run` run script located at `src/package_name/__main__.py`.
+7. `make run` run script located at `src/package_name/__main__.py`.
 
-### Exemple d'utilisation
+## Utilisation
 
 Voici un exemple de la façon d'ajouter une nouvelle tâche :
 
 ```python
-from task_manager import TaskManager
+from package_name.utils import get_file_paths_list
 
-manager = TaskManager()
-manager.add_task("Faire les courses")
+
+def main():
+    """Main function
+    """
+    file_paths = get_file_paths_list('./')
+    file_paths = sorted(file_paths)
+    print("List of file paths:", file_paths)
+
+
+if __name__ == '__main__':
+    main()
+
 ```
 
 ## Fonctionnalités

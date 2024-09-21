@@ -12,3 +12,8 @@ test:
 
 run:
 	python3 -m package_name
+
+pep8:
+    # autopep8 --in-place --aggressive --aggressive --recursive .
+    # autopep8 --in-place --aggressive --aggressive example.py
+
