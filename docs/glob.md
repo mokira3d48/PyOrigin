@@ -139,3 +139,88 @@ dans vos scripts Python.
 - [2] https://www.boardinfinity.com/blog/glob-in-python-2/
 - [3] https://towardsdatascience.com/the-python-glob-module-47d82f4cbd2d?gi=40d4a82590f4
 
+
+## Sélectionner en fonction de plusieurs extensions
+
+Pour sélectionner des fichiers en fonction de plusieurs extensions
+avec le module `glob`, vous pouvez utiliser une approche similaire
+à celle décrite dans les résultats de recherche. Voici un exemple détaillé
+qui montre comment procéder :
+
+### Exemple de Code
+
+```python
+import glob
+
+# Définir les extensions à sélectionner
+extensions = ['*.txt', '*.csv', '*.md']
+
+# Créer une liste pour stocker les fichiers sélectionnés
+selected_files = []
+
+# Utiliser glob pour sélectionner des fichiers avec plusieurs extensions
+for ext in extensions:
+    selected_files.extend(glob.glob(ext))
+
+# Afficher les fichiers sélectionnés
+print("Fichiers sélectionnés :", selected_files)
+```
+
+#### Explication du Code
+
+1. **Importation du Module** : Le module `glob` est importé
+pour permettre la recherche de fichiers.
+  
+2. **Définition des Extensions** : Une liste `extensions` est créée 
+pour contenir les motifs correspondant aux différentes extensions de fichiers
+que vous souhaitez sélectionner.
+
+3. **Création d'une Liste** : Une liste vide `selected_files` est initialisée
+pour stocker les fichiers trouvés.
+
+4. **Boucle sur les Extensions** :
+   - Pour chaque extension dans la liste `extensions`, la méthode
+   `glob.glob(ext)` est appelée.
+   - Les résultats sont ajoutés à la liste `selected_files` à l'aide
+   de la méthode `extend()`.
+
+5. **Affichage des Résultats** : Les fichiers sélectionnés sont affichés.
+
+#### Remarques
+
+- **Répertoire Courant** : Assurez-vous que le script est exécuté
+dans le même répertoire où se trouvent les fichiers avec les extensions
+spécifiées, ou ajustez le chemin d'accès dans les motifs (par exemple,
+`path/to/files/*.txt`).
+  
+- **Aucune Correspondance** : Si vous obtenez une liste vide
+(`[]`), cela signifie qu'aucun fichier correspondant aux motifs spécifiés
+n'a été trouvé dans le répertoire courant.
+
+### Exemple d'Utilisation avec Chemins Relatifs
+
+Si vos fichiers se trouvent dans un sous-répertoire, vous pouvez spécifier
+le chemin relatif :
+
+```python
+import glob
+
+# Définir les extensions à sélectionner
+extensions = ['path/to/files/*.txt', 'path/to/files/*.csv',
+              'path/to/files/*.md']
+
+# Créer une liste pour stocker les fichiers sélectionnés
+selected_files = []
+
+# Utiliser glob pour sélectionner des fichiers avec plusieurs extensions
+for ext in extensions:
+    selected_files.extend(glob.glob(ext))
+
+# Afficher les fichiers sélectionnés
+print("Fichiers sélectionnés :", selected_files)
+```
+
+L'utilisation de `glob` pour sélectionner des fichiers avec plusieurs
+extensions est simple et efficace. En suivant cette approche,
+vous pouvez facilement filtrer et travailler avec différents types
+de fichiers dans vos scripts Python.
