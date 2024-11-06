@@ -27,3 +27,7 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[project.scripts]
+mycmd = "package_name.__main__:main"
+

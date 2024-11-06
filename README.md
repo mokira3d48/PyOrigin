@@ -45,6 +45,7 @@ pip install -r requirements.txt
 5. `make dev` install the package in dev mode in virtual environment;
 6. `make test` run the unit test scripts located at `tests` directory;
 7. `make run` run script located at `src/package_name/__main__.py`.
+8. Or Run `mycmd` as a command line to run `src/package_name/__main__.py`.
 
 ## Utilisation
 
