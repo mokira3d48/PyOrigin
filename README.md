@@ -105,7 +105,6 @@ Pour toute question ou suggestion, veuillez contacter :
 - **Email** : dr.mokira@gmail.com
 - **GitHub** : [Votre Profil GitHub](https://github.com/mokira3d48)
 
-```
 
 ### Explications des sections :
 
@@ -118,7 +117,7 @@ Pour toute question ou suggestion, veuillez contacter :
 - **Contribuer** : Un guide sur la façon de contribuer au projet.
 - **Licence** : Informations sur la licence du projet.
 - **Contact** : Informations pour contacter le développeur ou l'équipe du projet.
-```
+
 
 Cet exemple de `README.md` est structuré et informatif, ce qui le rend utile
 pour les utilisateurs et les contributeurs potentiels.
