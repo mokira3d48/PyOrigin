@@ -264,3 +264,78 @@ Python interactifs et robustes.
 - [6] https://stackoverflow.com/questions/43968006/support-for-enum-arguments-in-argparse/60750535
 - [7] https://docs.python.org/uk/3/library/argparse.html
 
+## Affichage de version
+Pour afficher la version de votre programme
+en utilisant `argparse`, vous pouvez ajouter un argument avec l'action
+`'version'`. Voici un exemple simple de code Python qui montre comment
+procéder :
+
+### Exemple de Code
+
+```python
+import argparse
+
+# Définir la version de votre programme
+__version__ = '1.0.0'
+
+def main():
+    # Créer un analyseur d'arguments
+    parser = argparse.ArgumentParser(
+        prog='Mon Programme',  # Nom du programme
+        description='Un super programme très utile'  # Description du programme
+    )
+
+    # Ajouter un argument pour afficher la version
+    parser.add_argument(
+        '-V', '--version',  # Options pour afficher la version
+        action='version',  # Action pour afficher la version
+        version=f'%(prog)s {__version__}'  # Formatage de la version
+    )
+
+    # Analyser les arguments
+    args = parser.parse_args()
+
+if __name__ == "__main__":
+    main()
+```
+
+### Explication
+
+- **`argparse.ArgumentParser()`** : Crée un analyseur d'arguments.
+- **`prog`** : Spécifie le nom du programme affiché dans les messages d'aide.
+- **`description`** : Spécifie une brève description du programme.
+- **`add_argument('-V', '--version')`** : Ajoute un argument pour afficher
+la version.
+  - **`action='version'`** : Indique que l'argument doit afficher la version.
+  - **`version=f'%(prog)s {__version__}'`** : Formatage de la version,
+  incluant le nom du programme (`%(prog)s`) et la version (`__version__`).
+
+### Utilisation
+
+Pour afficher la version de votre programme, exécutez-le avec l'option
+`--version` ou `-V` :
+
+```bash
+python mon_programme.py --version
+```
+
+Cela affichera quelque chose comme :
+
+```
+Mon Programme 1.0.0
+```
+
+En utilisant `argparse`, vous pouvez facilement ajouter une option
+pour afficher la version de votre programme. Cela est particulièrement
+utile pour fournir des informations sur votre application aux utilisateurs.
+
+### Références
+- [1] https://stackoverflow.com/questions/15405636/pythons-argparse-to-show-programs-version-with-prog-and-version-string-formatt
+- [2] https://docs.python.org/fr/3.13/library/argparse.html
+- [3] https://docs.python.org/3/library/argparse.html
+- [4] https://docs.python.org/fr/3.8/library/argparse.html
+- [5] https://www.developpez.net/forums/d2087583/autres-langages/python/general-python/utilisation-librairie-argparse/
+- [6] https://docs.python.org/fr/3/howto/argparse.html
+- [7] https://docs.python.org/fr/3.5/howto/argparse.html
+- [8] https://python.readthedocs.io/fr/hack-in-language/howto/argparse.html
+
