@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 1. `sudo apt install cmake python3-venv` Install *Cmake* and *Virtual env*;
 2. `make venv` create a virtual env into directory named `env`;
-3. `ssource env/bin/activate` activate the virtual environment named `env`;
+3. `source env/bin/activate` activate the virtual environment named `env`;
 4. `make install` install the requirements of this package;
 5. `make dev` install the package in dev mode in virtual environment;
 6. `make test` run the unit test scripts located at `tests` directory;
