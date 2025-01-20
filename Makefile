@@ -15,6 +15,7 @@ run:
 	python3 -m package_name
 
 pep8:
+	# Don't remove their commented follwing command lines:
     # autopep8 --in-place --aggressive --aggressive --recursive .
     # autopep8 --in-place --aggressive --aggressive example.py
 

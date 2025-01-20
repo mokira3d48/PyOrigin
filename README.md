@@ -1,12 +1,9 @@
 # Origin Project
 ![](https://img.shields.io/badge/Python-3.10.12-blue)
 ![](https://img.shields.io/badge/LICENSE-MIT-%2300557f)
-![](https://img.shields.io/badge/lastest-2024--07--13-green)
+![](https://img.shields.io/badge/lastest-2025--01--20-green)
 ![](https://img.shields.io/badge/contact-dr.mokira%40gmail.com-blueviolet)
 
-<!-- ![](https://img.shields.io/badge/Django-5.0-%2344B78B) -->
-<!-- ![](https://img.shields.io/badge/REST%20Framework-3.14.0-%23A30000) -->
-<!-- ![](https://img.shields.io/badge/Swagger-OpenAPI%202.0-%23aaaa00) -->
 
 Referencielle clonnable pour initialiser un projet Python dans les bonnes
 pratiques.
@@ -77,7 +74,8 @@ if __name__ == '__main__':
 
 ## Tests
 
-Pour exécuter les tests, assurez-vous d'avoir `pytest` installé, puis exécutez :
+Pour exécuter les tests, assurez-vous d'avoir `pytest` installé,
+puis exécutez :
 
 ```bash
 make test  # ou pytest
@@ -87,26 +85,27 @@ make test  # ou pytest
 
 Les contributions sont les bienvenues ! Veuillez suivre ces étapes :
 
-1. Forkez le projet
-2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/ma-fonctionnalité`)
-3. Commitez vos changements (`git commit -m 'Ajout d'une nouvelle fonctionnalité'`)
-4. Poussez vers la branche (`git push origin feature/ma-fonctionnalité`)
-5. Ouvrez une Pull Request
+1. Forkez le projet;
+2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/ma-fonctionnalité`);
+3. Commitez vos changements (`git commit -m 'Ajout d'une nouvelle fonctionnalité'`);
+4. Poussez vers la branche (`git push origin feature/ma-fonctionnalité`);
+5. Ouvrez une Pull Request.
 
 ## Licence
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE)
+pour plus de détails.
 
 ## Contact
 
 Pour toute question ou suggestion, veuillez contacter :
 
-- **Nom** : Arnold Mokira
-- **Email** : dr.mokira@gmail.com
+- **Nom** : Votre nom (Arnold Mokira)
+- **Email** : Votre adresse mail (dr.mokira@gmail.com)
 - **GitHub** : [Votre Profil GitHub](https://github.com/mokira3d48)
 
 
-### Explications des sections :
+### Explications des sections : (A supprimer du README.md)
 
 - **Titre et description** : Le titre du projet et une brève description de ce qu'il fait.
 - **Table des matières** : Une liste de sections pour faciliter la navigation.
@@ -121,4 +120,5 @@ Pour toute question ou suggestion, veuillez contacter :
 
 Cet exemple de `README.md` est structuré et informatif, ce qui le rend utile
 pour les utilisateurs et les contributeurs potentiels.
+
 
