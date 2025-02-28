@@ -9,6 +9,8 @@ Clonable referential to initialize a Python project with the best practice.
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
+  - [For Linux](#for-linux)
+  - [For Windows](#for-windows)
 - [Usage](#uage)
 - [Features](#features)
 - [Tests](#tests)
@@ -48,7 +50,7 @@ named `env`;
 7. `make run` run script located at `src/package_name/__main__.py`.
 8. Or Run `mycmd` as a command line to run `src/package_name/__main__.py`.
 
-### Windows
+### For Windows
 
 ```bash
 git clone git@github.com:mokira3d48/PyOrigin.git my_project
