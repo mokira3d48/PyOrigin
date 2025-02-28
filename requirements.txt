@@ -1,6 +1,7 @@
 python-dotenv==1.0.0
-pytest>=6.2.5
+pytest==8.2
+sphinx==7.1.2
+sphinx-autobuild==2021.3.14
 setuptools>=42
 wheel
 autopep8
-
