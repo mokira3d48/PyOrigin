@@ -1,31 +1,31 @@
 # Origin Project
-![](https://img.shields.io/badge/Python-3.10.12-blue)
+![](https://img.shields.io/badge/Python-3.8-blue)
 ![](https://img.shields.io/badge/LICENSE-MIT-%2300557f)
-![](https://img.shields.io/badge/lastest-2025--01--20-green)
+![](https://img.shields.io/badge/lastest-2025--02--27-green)
 ![](https://img.shields.io/badge/contact-dr.mokira%40gmail.com-blueviolet)
 
+Clonable referential to initialize a Python project with the best practice.
 
-Referencielle clonnable pour initialiser un projet Python dans les bonnes
-pratiques.
-
-## Table des matières
+## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
-- [Utilisation](#utilisation)
-- [Fonctionnalités](#fonctionnalités)
+- [Usage](#uage)
+- [Features](#features)
 - [Tests](#tests)
-- [Contribuer](#contribuer)
+- [To contribute](#to-contribute)
 - [Licence](#licence)
 - [Contact](#contact)
 
 
 ## Description
 
-Mon Projet Python est une application simple qui permet aux utilisateurs de créer, lire, mettre à jour et supprimer des tâches. Il est conçu pour être facile à utiliser et à étendre.
+My Python project is a simple application that allows users to create, read,
+update and delete the tasks. It is designed to be easy to use and expand.
 
 ## Installation
 
-Pour installer le projet, assurez-vous d'avoir Python 3.7 ou une version ultérieure et `pip` installés sur votre machine. Ensuite, exécutez les commandes suivantes :
+To install the project, make sure you have Python 3.8 or later version
+and `pip` installed on your machine. And then run the following command lines:
 
 ```bash
 git clone git@github.com:mokira3d48/PyOrigin.git my_project
@@ -44,9 +44,11 @@ pip install -r requirements.txt
 7. `make run` run script located at `src/package_name/__main__.py`.
 8. Or Run `mycmd` as a command line to run `src/package_name/__main__.py`.
 
-## Utilisation
+---
 
-Voici un exemple de la façon d'ajouter une nouvelle tâche :
+## Usage
+
+Here is an example how to add a new task:
 
 ```python
 from package_name.utils import get_file_paths_list
@@ -65,44 +67,51 @@ if __name__ == '__main__':
 
 ```
 
-## Fonctionnalités
+## Features
 
-- Ajouter des tâches
-- Marquer des tâches comme complètes
-- Supprimer des tâches
-- Afficher toutes les tâches
+- Add tasks.
+- Mark tasks as complete.
+- Delete tasks.
+- Show all the tasks.
 
 ## Tests
 
-Pour exécuter les tests, assurez-vous d'avoir `pytest` installé,
-puis exécutez :
+To execute the unittest, make sure you have `pytest` package installed,
+and then run the following command line:
 
 ```bash
-make test  # ou pytest
+make test 
+```
+or
+
+```shell
+pytest
 ```
 
-## Contribuer
 
-Les contributions sont les bienvenues ! Veuillez suivre ces étapes :
+---
 
-1. Forkez le projet;
-2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/ma-fonctionnalité`);
-3. Commitez vos changements (`git commit -m 'Ajout d'une nouvelle fonctionnalité'`);
-4. Poussez vers la branche (`git push origin feature/ma-fonctionnalité`);
-5. Ouvrez une Pull Request.
+## To contribute
+
+Contributions are welcome! Please follow these steps:
+
+1. Create a new branch for your feature (`git checkout -b feature/my-feature`);
+2. Commit your changes (`git commit -m 'Adding a new feature'`);
+3. Push toward the branch (`git push origin feature/my-feature`);
+4. Create a new *Pull Request* or *Merge Request*.
 
 ## Licence
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE)
-pour plus de détails.
+This project is licensed under the MIT License. See the file [LICENSE](LICENSE)
+for more details, contact me please.
 
 ## Contact
 
-Pour toute question ou suggestion, veuillez contacter :
+For your question or suggestion, contact me please :
 
-- **Nom** : Votre nom (Arnold Mokira)
-- **Email** : Votre adresse mail (dr.mokira@gmail.com)
-- **GitHub** : [Votre Profil GitHub](https://github.com/mokira3d48)
+- **Name** : Your name (Arnold Mokira)
+- **Email** : Your email address (dr.mokira@gmail.com)
+- **GitHub** : [Your GitHub or Gitlab profile](https://github.com/mokira3d48)
 
 
 ### Explications des sections : (A supprimer du README.md)
@@ -120,5 +129,3 @@ Pour toute question ou suggestion, veuillez contacter :
 
 Cet exemple de `README.md` est structuré et informatif, ce qui le rend utile
 pour les utilisateurs et les contributeurs potentiels.
-
-
