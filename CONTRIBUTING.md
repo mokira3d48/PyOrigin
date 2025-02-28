@@ -2,62 +2,62 @@
  Python :
 -->
 
-# Contribuer à Mon Projet Python
+# Contributing to My Python Project
 
-Merci de votre intérêt pour contribuer à **Mon Projet Python** ! Nous apprécions toutes les contributions, qu'elles soient petites ou grandes. Voici quelques lignes directrices pour vous aider à commencer.
+Thank you for your interest in contributing to **My Python Project**! We appreciate all contributions, big and small. Here are some guidelines to help you get started.
 
-## Comment contribuer
+## How to Contribute
 
-### 1. Forkez le projet
+### 1. Fork the Project
 
-Commencez par forker le dépôt sur GitHub. Cela vous permettra d'avoir votre propre copie du projet sur laquelle vous pouvez travailler.
+Start by forking the repository on GitHub. This will allow you to have your own copy of the project to work on.
 
-### 2. Créez une branche
+### 2. Create a Branch
 
-Avant de commencer à travailler sur une nouvelle fonctionnalité ou un correctif, créez une nouvelle branche. Utilisez un nom de branche descriptif :
-
-```bash
-git checkout -b feature/ma-nouvelle-fonctionnalité
-```
-
-### 3. Faites vos modifications
-
-Apportez vos modifications et assurez-vous que votre code respecte les conventions de style Python (PEP 8). Vous pouvez utiliser des outils comme `flake8` ou `black` pour vérifier le style de votre code.
-
-### 4. Ajoutez des tests
-
-Si vous ajoutez une nouvelle fonctionnalité ou corrigez un bug, veuillez ajouter des tests pour vérifier que votre code fonctionne comme prévu. Les tests doivent être placés dans le répertoire `tests`.
-
-### 5. Commitez vos changements
-
-Commitez vos modifications avec un message de commit clair et descriptif :
+Before you start working on a new feature or patch, create a new branch. Use a descriptive branch name:
 
 ```bash
-git commit -m "Ajout de la fonctionnalité X"
+git checkout -b feature/my-new-feature
 ```
 
-### 6. Poussez vos changements
+### 3. Make Your Changes
 
-Poussez vos changements vers votre fork :
+Make your changes and make sure your code follows Python style conventions (PEP 8). You can use tools like `flake8` or `black` to check the style of your code.
+
+### 4. Add tests
+
+If you add a new feature or fix a bug, please add tests to verify that your code works as expected. Tests should be placed in the `tests` directory.
+
+### 5. Commit your changes
+
+Commit your changes with a clear and descriptive commit message:
 
 ```bash
-git push origin feature/ma-nouvelle-fonctionnalité
+git commit -m "Adding feature X"
 ```
 
-### 7. Ouvrez une Pull Request
+### 6. Push your changes
 
-Allez sur le dépôt d'origine et ouvrez une Pull Request. Décrivez clairement les modifications que vous avez apportées et pourquoi elles sont nécessaires. Nous examinerons votre Pull Request dès que possible.
+Push your changes to your fork:
 
-## Code de conduite
+```bash
+git push origin feature/my-new-feature
+```
 
-Nous nous engageons à créer un environnement accueillant et inclusif pour tous les contributeurs. Veuillez lire notre [Code de conduite](CODE_OF_CONDUCT.md) pour comprendre nos attentes en matière de comportement.
+### 7. Open a Pull Request
 
-## Questions ?
+Go to the origin repository and open a Pull Request. Clearly describe the changes you made and why they are necessary. We will review your Pull Request as soon as possible.
 
-Si vous avez des questions ou avez besoin d'aide, n'hésitez pas à ouvrir une issue ou à contacter l'équipe de développement.
+## Code of Conduct
 
-Merci encore pour votre contribution à **Mon Projet Python** !
-Votre aide est précieuse pour améliorer ce projet.
+We are committed to creating a welcoming and inclusive environment for all contributors. Please read our [Code of Conduct](CODE_OF_CONDUCT.md) to understand our expectations for behavior.
+
+## Questions?
+
+If you have any questions or need help, feel free to open an issue or contact the development team.
+
+Thanks again for your contribution to **My Python Project**!
+Your help is invaluable in improving this project.
 
 <!--
 
