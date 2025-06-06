@@ -1,7 +1,7 @@
 # Origin Project
 ![](https://img.shields.io/badge/Python-3.8-blue)
 ![](https://img.shields.io/badge/LICENSE-MIT-%2300557f)
-![](https://img.shields.io/badge/lastest-2025--02--27-green)
+![](https://img.shields.io/badge/lastest-2025--06--06-green)
 ![](https://img.shields.io/badge/contact-dr.mokira%40gmail.com-blueviolet)
 
 Clonable referential to initialize a Python project with the best practice.
@@ -32,20 +32,20 @@ and `pip` installed on your machine. And then run the following command lines.
 ### For Linux
 
 ```bash
-git clone git@github.com:mokira3d48/PyOrigin.git my_project
-cd my_project
-sudo rm -r .git
-git init
+git clone git@github.com:mokira3d48/PyOrigin.git my_project;
+cd my_project;
+sudo rm -r .git;
+git init;  # To create a new instance of git repository
 ```
 
 And then,
 
 1. `sudo apt install cmake python3-venv` Install *Cmake* and *Virtual env*;
-2. `make venv` or `python3 -m venv env` create a virtual env into directory
+2. `python3 -m venv .venv` create a virtual env into directory
 named `env`;
-3. `source env/bin/activate` activate the virtual environment named `env`;
+3. `source .venv/bin/activate` activate the virtual environment named `.venv`;
 4. `make install` install the requirements of this package;
-5. `make dev` install the package in dev mode in virtual environment;
+5. `pip install -e .` install the package in dev mode in virtual environment;
 6. `make test` run the unit test scripts located at `tests` directory;
 7. `make run` run script located at `src/package_name/__main__.py`.
 8. Or Run `mycmd` as a command line to run `src/package_name/__main__.py`.
@@ -54,6 +54,9 @@ named `env`;
 
 ```bash
 git clone git@github.com:mokira3d48/PyOrigin.git my_project
+```
+
+```bash
 cd my_project
 ```
 
@@ -64,15 +67,16 @@ And then,
 
 1. Install python for windows;
 2. Open your command prompt;
-3. Run `python3 -m venv env` to create a virtual env into directory
-named `env`;
-4. Run `pip install -r requirements` to install the requirements
+3. Run `python -m venv .venv` to create a virtual env into directory
+named `.venv`;
+4 . Run `.venv\Scripts\activate` to activate the virtual environment;
+5. Run `pip install -r requirements.txt` to install the requirements
 of this package or project;
-5. Run `pip install -e .` install the package in dev mode in virtual
+6. Run `pip install -e .` install the package in dev mode in virtual
 environment;
-6. Run `python3 -m package_name` to run main script located
-at `src/package_name/__main__.py`. Or Run `mycmd` as a command line
-to run `src/package_name/__main__.py` and start the application.
+7. Run `python -m package_name` to run main script located
+at `src\package_name\__main__.py`. Or Run `mycmd` as a command line
+to run `src\package_name\__main__.py` and start the application.
 
 
 ---
