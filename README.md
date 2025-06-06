@@ -7,8 +7,10 @@
 ![](https://img.shields.io/badge/lastest-2025--06--06-green)
 ![](https://img.shields.io/badge/contact-dr.mokira%40gmail.com-blueviolet)
 
-</div>
+
 ---
+
+</div>
 
 Cloneable referential to initialize a Python project with the best practice.
 
