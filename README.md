@@ -13,7 +13,7 @@
 
 </div>
 
-## Table of Contents
+### Table of Contents
 - [Description](#description)
 - [Installation](#installation)
   - [For Linux](#for-linux)
