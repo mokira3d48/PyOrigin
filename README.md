@@ -9,7 +9,7 @@
 
 ---
 
-<!-- Cloneable referential to initialize a Python project with the best practice. -->
+Cloneable referential to initialize a Python project with the best practice.
 
 </div>
 
