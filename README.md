@@ -2,11 +2,12 @@
   
 # Origin Project
 
-
 ![](https://img.shields.io/badge/Python-3.8-blue)
 ![](https://img.shields.io/badge/LICENSE-MIT-%2300557f)
 ![](https://img.shields.io/badge/lastest-2025--06--06-green)
 ![](https://img.shields.io/badge/contact-dr.mokira%40gmail.com-blueviolet)
+
+---
 
 Cloneable referential to initialize a Python project with the best practice.
 
