@@ -1,6 +1,6 @@
 <div align="center">
   
-# Origin Project
+### Origin Project
 
 ![](https://img.shields.io/badge/Python-3.8-blue)
 ![](https://img.shields.io/badge/LICENSE-MIT-%2300557f)
