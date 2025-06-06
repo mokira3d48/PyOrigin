@@ -151,7 +151,7 @@ for more details, contact me please.
 
 ## Contact
 
-For your question or suggestion, contact me please :
+For your question or suggestion, contact me please:
 
 - **Name** : Your name (Doctor Mokira)
 - **Email** : Your email address (dr.mokira@gmail.com)
