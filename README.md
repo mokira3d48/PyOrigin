@@ -13,6 +13,8 @@
 </div>
 
 Cloneable referential to initialize a Python project based on this template with the best practice.
+This is a pre-configured and read-to-used project to create deployable python libraries
+or application much more easily.
 
 #### Table of Contents
 - [Description](#description)
