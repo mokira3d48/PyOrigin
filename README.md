@@ -12,7 +12,7 @@
 
 </div>
 
-Cloneable referential to initialize a Python project with the best practice.
+Cloneable referential to initialize a Python project based on this template with the best practice.
 
 #### Table of Contents
 - [Description](#description)
