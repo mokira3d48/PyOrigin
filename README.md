@@ -147,7 +147,7 @@ For your question or suggestion, contact me please :
 - **Email** : Your email address (dr.mokira@gmail.com)
 - **GitHub** : [Your GitHub or Gitlab profile](https://github.com/mokira3d48)
 
-
+<!--
 ### Explications des sections : (A supprimer du README.md)
 
 - **Titre et description** : Le titre du projet et une brève description de ce qu'il fait.
@@ -163,3 +163,4 @@ For your question or suggestion, contact me please :
 
 Cet exemple de `README.md` est structuré et informatif, ce qui le rend utile
 pour les utilisateurs et les contributeurs potentiels.
+-->
