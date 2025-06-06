@@ -4,7 +4,7 @@
 ![](https://img.shields.io/badge/lastest-2025--06--06-green)
 ![](https://img.shields.io/badge/contact-dr.mokira%40gmail.com-blueviolet)
 
-Clonable referential to initialize a Python project with the best practice.
+Cloneable referential to initialize a Python project with the best practice.
 
 ## Table of Contents
 - [Description](#description)
