@@ -150,7 +150,7 @@ for more details, contact me please.
 
 For your question or suggestion, contact me please :
 
-- **Name** : Your name (Arnold Mokira)
+- **Name** : Your name (Doctor Mokira)
 - **Email** : Your email address (dr.mokira@gmail.com)
 - **GitHub** : [Your GitHub or Gitlab profile](https://github.com/mokira3d48)
 
