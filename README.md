@@ -21,7 +21,7 @@ or application much more easily.
 - [Installation](#installation)
   - [For Linux](#for-linux)
   - [For Windows](#for-windows)
-- [Usage](#uage)
+- [Usage](#usage)
 - [Features](#features)
 - [Tests](#tests)
 - [To contribute](#to-contribute)
