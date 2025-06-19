@@ -1,14 +1,11 @@
 <div align="center">
   
-### ORIGIN PROJECT
+# ORIGIN PROJECT
 
 ![](https://img.shields.io/badge/Python-3.8-blue)
 ![](https://img.shields.io/badge/LICENSE-MIT-%2300557f)
 ![](https://img.shields.io/badge/lastest-2025--06--06-green)
 ![](https://img.shields.io/badge/contact-dr.mokira%40gmail.com-blueviolet)
-
-
----
 
 </div>
 
@@ -16,7 +13,8 @@ Cloneable referential to initialize a Python project based on this template with
 This is a pre-configured and read-to-used project to create deployable python libraries
 or application much more easily.
 
-#### Table of Contents
+**Table of Contents**
+
 - [Description](#description)
 - [Installation](#installation)
   - [For Linux](#for-linux)
