@@ -77,7 +77,7 @@ And then,
 2. Open your command prompt;
 3. Run `python -m venv .venv` to create a virtual env into directory
 named `.venv`;
-4 . Run `.venv\Scripts\activate` to activate the virtual environment;
+4. Run `.venv\Scripts\activate` to activate the virtual environment;
 5. Run `pip install -r requirements.txt` to install the requirements
 of this package or project;
 6. Run `pip install -e .` install the package in dev mode in virtual
