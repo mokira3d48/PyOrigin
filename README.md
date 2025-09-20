@@ -48,6 +48,22 @@ git init;  # To create a new instance of git repository
 
 And then,
 
+```sh
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev;
+sudo apt install pyenv;
+# git clone https://github.com/pyenv/pyenv.git ~/.pyenv;
+# 
+# echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc;
+# echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc;
+# echo 'eval "$(pyenv init --path)"' >> ~/.bashrc;
+# echo 'eval "$(pyenv init -)"' >> ~/.bashrc;
+# source ~/.bashrc;
+
+pyenv install 3.10.18;
+sudo ln -s $HOME/.pyenv/versions/3.10.18/bin/python3 /usr/local/bin/python3.10
+```
+
+
 1. `sudo apt install cmake python3-venv` Install *Cmake* and *Virtual env*;
 2. `python3 -m venv .venv` create a virtual env into directory
 named `env`;
