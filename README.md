@@ -49,20 +49,36 @@ git init;  # To create a new instance of git repository
 And then,
 
 ```sh
-sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev;
-sudo apt install pyenv;
-# git clone https://github.com/pyenv/pyenv.git ~/.pyenv;
-# 
-# echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc;
-# echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc;
-# echo 'eval "$(pyenv init --path)"' >> ~/.bashrc;
-# echo 'eval "$(pyenv init -)"' >> ~/.bashrc;
-# source ~/.bashrc;
-
-pyenv install 3.10.18;
-sudo ln -s $HOME/.pyenv/versions/3.10.18/bin/python3 /usr/local/bin/python3.10
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
 ```
 
+And then, we can run the following command to install `pyenv`
+directly via APT on your computer.
+
+```sh
+sudo apt install pyenv
+```
+
+Or run the following command lines, to clone and install
+`pyenv` from its souce code.
+
+```sh
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv;
+ 
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc;
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc;
+echo 'eval "$(pyenv init --path)"' >> ~/.bashrc;
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc;
+source ~/.bashrc;
+```
+
+Now, runing the following command line, we can use `pyenv`
+to install the version of Python what we want to install.
+
+```sh
+pyenv install 3.10.18;  # Here, we install Python 3.10.18.
+sudo ln -s $HOME/.pyenv/versions/3.10.18/bin/python3 /usr/local/bin/python3.10
+```
 
 1. `sudo apt install cmake python3-venv` Install *Cmake* and *Virtual env*;
 2. `python3 -m venv .venv` create a virtual env into directory
@@ -70,9 +86,8 @@ named `env`;
 3. `source .venv/bin/activate` activate the virtual environment named `.venv`;
 4. `make install` install the requirements of this package;
 5. `pip install -e .` install the package in dev mode in virtual environment;
-6. `make test` run the unit test scripts located at `tests` directory;
-7. `make run` run script located at `src/package_name/__main__.py`.
-8. Or Run `mycmd` as a command line to run `src/package_name/__main__.py`.
+6. Run `make test` or `pytest` to execute the unit test scripts located
+at `tests` directory.
 
 ### For Windows
 
@@ -98,9 +113,7 @@ named `.venv`;
 of this package or project;
 6. Run `pip install -e .` install the package in dev mode in virtual
 environment;
-7. Run `python -m package_name` to run main script located
-at `src\package_name\__main__.py`. Or Run `mycmd` as a command line
-to run `src\package_name\__main__.py` and start the application.
+7. `pytest` run the unit test scripts located at `tests` directory.
 
 
 ---
