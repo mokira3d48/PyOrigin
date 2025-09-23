@@ -16,21 +16,28 @@ or application much more easily.
 **Table of Contents**
 
 - [Description](#description):  contents the project description.
+- [Features](#features): contents the descriptions of each features implemented and available on this software.
 - [Installation](#installation): contents the process of the installation for two plateforms.
   - [For Linux](#for-linux): here is the process of installation of this software on linux.
   - [For Windows](#for-windows): here is the process of installation of this software on Windows.
-- [Usage](#usage)
-- [Features](#features)
-- [Tests](#tests)
-- [To contribute](#to-contribute)
-- [Licence](#licence)
-- [Contact](#contact)
+- [Usage](#usage): all details of the use cases usefull to get starting this software. 
+- [Tests](#tests): all details to run unittest.
+- [To contribute](#to-contribute): usefull information for the person who want to contribute to this project.
+- [Licence](#licence): description of the license of this software.
+- [Contact](#contact): developers contacts.
 
 
 ## Description
 
 My Python project is a simple application that allows users to create, read,
 update and delete the tasks. It is designed to be easy to use and expand.
+
+## Features
+
+- Add tasks.
+- Mark tasks as complete.
+- Delete tasks.
+- Show all the tasks.
 
 ## Installation
 
@@ -115,8 +122,8 @@ of this package or project;
 environment;
 7. `pytest` run the unit test scripts located at `tests` directory.
 
-
 ---
+
 
 ## Usage
 
@@ -138,13 +145,6 @@ if __name__ == '__main__':
     main()
 
 ```
-
-## Features
-
-- Add tasks.
-- Mark tasks as complete.
-- Delete tasks.
-- Show all the tasks.
 
 ## Tests
 
