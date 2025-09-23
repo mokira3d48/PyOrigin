@@ -15,10 +15,10 @@ or application much more easily.
 
 **Table of Contents**
 
-- [Description](#description)
-- [Installation](#installation)
-  - [For Linux](#for-linux)
-  - [For Windows](#for-windows)
+- [Description](#description):  contents the project description.
+- [Installation](#installation): contents the process of the installation for two plateforms.
+  - [For Linux](#for-linux): here is the process of installation of this software on linux.
+  - [For Windows](#for-windows): here is the process of installation of this software on Windows.
 - [Usage](#usage)
 - [Features](#features)
 - [Tests](#tests)
