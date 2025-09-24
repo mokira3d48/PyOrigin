@@ -1,19 +1,14 @@
-full-install:
-	python3 -m venv .venv
-	.venv/bin/python3 --version 
+install:
+	test -d .venv || (python3 -m venv .venv && echo "\033[92mVirtual environment is created successfully.\033[0m")
+	echo "\033[92m" && .venv/bin/python3 --version && echo "\033[0m"
 	.venv/bin/python3 -m pip install --upgrade pip
 	.venv/bin/python3 -m pip install -r requirements.txt
-	.venv/bin/python3 -m pip install -e .
 
-install:
-	pip install --upgrade pip
-	pip install -r requirements.txt
+dev-install:
+	.venv/bin/python3 -m pip install -e .
 
 test:
 	pytest tests
-
-run:
-	python3 -m package_name
 
 pep8:
 	# Don't remove their commented follwing command lines:
