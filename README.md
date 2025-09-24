@@ -19,6 +19,10 @@ or application much more easily.
 - [Features](#features): contents the descriptions of each features implemented and available on this software.
 - [Installation](#installation): contents the process of the installation for two plateforms.
   - [For Linux](#for-linux): here is the process of installation of this software on linux.
+    - [OS dependences](#os-dependences): Installation of your Linux OS dependences.
+      - [Ubuntu](#ubuntu): Choose this, if your OS is Ubuntu.
+      - [Debian or Kali](#debian-or-kali): Otherwise, choose this, if your OS is Debian or Kali.
+    - [Project dependences](#project-dependences): To install the dependences for this project.
   - [For Windows](#for-windows): here is the process of installation of this software on Windows.
 - [Usage](#usage): all details of the use cases usefull to get starting this software. 
 - [Tests](#tests): all details to run unittest.
@@ -53,7 +57,34 @@ sudo rm -r .git;
 git init;  # To create a new instance of git repository
 ```
 
-And then,
+#### OS dependences
+
+##### Ubuntu
+Open your terminal and run following command lines
+to add the deadsnakes PPA to your system:
+
+```sh
+sudo apt update;
+sudo apt install software-properties-common -y;
+sudo add-apt-repository ppa:deadsnakes/ppa -y
+
+```
+
+Refresh your package list to include the deadsnakes PPA
+and then install Python 3.10:
+
+```sh
+sudo apt update;
+sudo apt install python3.10;
+python3.10 --version
+```
+
+> **NOTE**: Do not change the default Python version of Ubuntu,
+> as it may break system tools that depend on it.
+
+##### Debian or Kali
+
+In first, install the following dependences on your computer.
 
 ```sh
 sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
@@ -86,6 +117,8 @@ to install the version of Python what we want to install.
 pyenv install 3.10.18;  # Here, we install Python 3.10.18.
 sudo ln -s $HOME/.pyenv/versions/3.10.18/bin/python3 /usr/local/bin/python3.10
 ```
+
+#### Project dependences
 
 1. `sudo apt install cmake python3-venv` Install *Cmake* and *Virtual env*;
 2. `python3 -m venv .venv` create a virtual env into directory
