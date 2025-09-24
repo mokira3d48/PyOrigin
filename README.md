@@ -4,7 +4,7 @@
 
 ![](https://img.shields.io/badge/Python-3.8-blue)
 ![](https://img.shields.io/badge/LICENSE-MIT-%2300557f)
-![](https://img.shields.io/badge/lastest-2025--06--06-green)
+![](https://img.shields.io/badge/lastest-2025--09--24-green)
 ![](https://img.shields.io/badge/contact-dr.mokira%40gmail.com-blueviolet)
 
 </div>
@@ -47,7 +47,7 @@ and `pip` installed on your machine. And then run the following command lines.
 ### For Linux
 
 ```bash
-git clone git@github.com:mokira3d48/PyOrigin.git my_project;
+git clone https://github.com/mokira3d48/PyOrigin my_project;
 cd my_project;
 sudo rm -r .git;
 git init;  # To create a new instance of git repository
@@ -99,7 +99,7 @@ at `tests` directory.
 ### For Windows
 
 ```bash
-git clone git@github.com:mokira3d48/PyOrigin.git my_project
+git clone https://github.com/mokira3d48/PyOrigin my_project
 ```
 
 ```bash
