@@ -4,7 +4,7 @@ install:
 	.venv/bin/python3 -m pip install --upgrade pip
 	.venv/bin/python3 -m pip install -r requirements.txt
 
-dev-install:
+dev_install:
 	.venv/bin/python3 -m pip install -e .
 
 test:
