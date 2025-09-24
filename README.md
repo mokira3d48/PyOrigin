@@ -92,7 +92,7 @@ sudo ln -s $HOME/.pyenv/versions/3.10.18/bin/python3 /usr/local/bin/python3.10
 named `env`;
 3. `source .venv/bin/activate` activate the virtual environment named `.venv`;
 4. `make install` install the requirements of this package;
-5. `make dev-install` or `pip install -e .` install the package in dev mode in virtual environment;
+5. `make dev_install` or `pip install -e .` install the package in dev mode in virtual environment;
 6. Run `make test` or `pytest` to execute the unit test scripts located
 at `tests` directory.
 
