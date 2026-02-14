@@ -8,9 +8,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 DEBUG = ast.literal_eval(os.getenv('DEBUG', 'False'))
-
-
-DEBUG = ast.literal_eval(os.getenv('DEBUG', 'False'))
 OUTPUT_DIRPATH = os.getenv('OUTPUT_DIRPATH', 'runs')
 
 os.makedirs(OUTPUT_DIRPATH, exist_ok=True)
