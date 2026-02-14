@@ -4,7 +4,16 @@ import logging
 from pathlib import Path
 from dotenv import load_dotenv
 
+# loads the configs from .env
+load_dotenv()
+
 DEBUG = ast.literal_eval(os.getenv('DEBUG', 'False'))
+
+
+DEBUG = ast.literal_eval(os.getenv('DEBUG', 'False'))
+OUTPUT_DIRPATH = os.getenv('OUTPUT_DIRPATH', 'runs')
+
+os.makedirs(OUTPUT_DIRPATH, exist_ok=True)
 
 # Set up logging:
 logging.basicConfig(
@@ -12,12 +21,9 @@ logging.basicConfig(
     format='%(levelname)s [%(asctime)s] \t %(message)s',
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler("pyorigin.log"),
+        logging.FileHandler(os.path.join(OUTPUT_DIRPATH, "ijepa.log")),
     ]
 )
-
-# loads the configs from .env
-load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # BASE_DIR = Path(__file__).resolve().parent.parent
