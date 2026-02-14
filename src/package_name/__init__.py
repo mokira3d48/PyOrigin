@@ -21,7 +21,7 @@ logging.basicConfig(
     format='%(levelname)s [%(asctime)s] \t %(message)s',
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler(os.path.join(OUTPUT_DIRPATH, "ijepa.log")),
+        logging.FileHandler(os.path.join(OUTPUT_DIRPATH, "pyorigin.log")),
     ]
 )
 
