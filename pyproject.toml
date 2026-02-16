@@ -38,7 +38,7 @@ classifiers = [
 keywords = ["origin", "python3"]
 requires-python = ">=3.8"
 dependencies = [
-    "requests>=2.25.1",
+    "loguru==0.7.3",
     "python-dotenv==1.0.0",
 ]
 
@@ -56,4 +56,4 @@ version = { attr = "package_name.__version__" }
 where = ["src"]
 
 [project.scripts]
-mycmd = "package_name.__main__:main"
+mycmd = "package_name.entrypoints.main:main"

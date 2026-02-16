@@ -6,7 +6,6 @@ install:
 	test -d .venv || (python3 -m venv .venv && echo "\033[92mVirtual environment is created successfully.\033[0m")
 	echo "\033[92m" && $(PYTHON3) --version && echo "\033[0m"
 	$(PYTHON3) -m pip install --upgrade pip
-	$(PYTHON3) -m pip install torch==2.8.0 torchvision --index-url "https://download.pytorch.org/whl/cpu" && \
 	$(PYTHON3) -m pip install -r requirements.txt
 
 dev_install:
