@@ -26,8 +26,8 @@ def setup_logger():
 
     # ── 3. Console sublime (toujours présente) ──
     console_format = (
-        "<green>{time:YYYY-MM-DD HH:mm:ss}</green> - "
-        "<level>{level.icon} {level.name: <8}</level> - "
+        "<level>{level.icon} {level.name: <8}</level> "
+        "<green>[{time:YYYY-MM-DD HH:mm:ss}]</green>  "
         # "<cyan>{name}</cyan>:<cyan>{function}</cyan>:<cyan>{line}</cyan> - "
         "{message}"
     )
@@ -47,18 +47,18 @@ def setup_logger():
     os.makedirs(log_dir, exist_ok=True)
 
     if not DEBUG:
-        # Production → JSON pur (parfait pour Loki, ELK, Datadog, etc.)
         logger.add(
-            str(log_dir / "app_{time:YYYY-MM-DD}.jsonl"),
+            str(log_dir / "app_{time:YYYY-MM-DD}.log"),
             level=log_level,
-            format="{message}",          # ← important : JSON brut
-            serialize=True,              # structure complète (extra, exception, etc.)
+            format="{time:YYYY-MM-DD HH:mm:ss} | {level.name: <8} | {name}:{function}:{line} | {message}",
+            # serialize=True,              # structure complète (extra, exception, etc.)
             rotation="500 MB",
             retention="30 days",
             compression="zip",
             enqueue=True,
             backtrace=True,
             diagnose=False,
+
         )
     else:
         # Développement → fichier texte lisible + console
